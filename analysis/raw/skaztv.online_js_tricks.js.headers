@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Fri, 29 Aug 2025 00:59:24 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Set-Cookie: PHPSESSID=5bf1in5cm8ndodrsgu79lm5he6; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 1000
+Access-Control-Allow-Headers: x-requested-with, Content-Type, profile, token, origin, authorization, accept, x-access-token
+Content-Type: text/html; charset=UTF-8
+

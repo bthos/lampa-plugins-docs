@@ -1,0 +1,10 @@
+{
+  "id": "myplugin",
+  "name": "My Lampa Plugin",
+  "version": "0.1.0",
+  "entry": "main.js",
+  "author": "Your Name",
+  "description": "Starter plugin template for Lampa",
+  "homepage": "https://example.com",
+  "permissions": ["network", "storage"]
+}

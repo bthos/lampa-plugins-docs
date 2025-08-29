@@ -1,0 +1,16 @@
+HTTP/2 200 
+server: nginx
+date: Fri, 29 Aug 2025 00:59:12 GMT
+content-type: application/javascript
+set-cookie: PHPSESSID=n45gsa0rd4e84us39sgi74t5s4; path=/
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+pragma: no-cache
+access-control-allow-origin: *
+vary: Accept-Encoding
+access-control-allow-methods: POST, GET, OPTIONS, DELETE, PUT
+access-control-max-age: 1000
+access-control-allow-headers: x-requested-with, Content-Type, profile, token, origin, authorization, accept, x-access-token
+cache: MISS
+x-node: am4-up-gc94
+

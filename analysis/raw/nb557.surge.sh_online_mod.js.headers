@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Server: Surge
+Surge-Cache: HIT
+Surge-Stamp: 16790::1754641748094-a7d50206cb0f203cd87a87431f4135a7
+Age: 1787406
+Date: Fri, 29 Aug 2025 00:59:21 GMT
+Cache-Control: public, max-age=0, must-revalidate
+ETag: "71f57f973cc7bb5fe5258b542e76ec4a6bc79a91431bca5293b1a684bde3f0ce"
+Content-Type: application/javascript; charset=UTF-8
+Accept-Ranges: bytes
+Response-Time: 1ms
+Content-Length: 559988
+Vary: Accept-Encoding
+Connection: close
+

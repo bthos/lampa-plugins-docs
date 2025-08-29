@@ -1,0 +1,14 @@
+HTTP/1.1 405 Method Not Allowed
+Server: nginx/1.22.1
+Date: Fri, 29 Aug 2025 00:59:26 GMT
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Origin, Content-Type, Authorization, X-Requested-With, X-Signalr-User-Agent, Cache-Control, DNT, If-Modified-Since, Keep-Alive, User-Agent, Token, Profile
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Origin: *
+Allow: GET
+Cache-Control: no-cache, no-store, must-revalidate
+Expires: 0
+Pragma: no-cache
+Access-Control-Allow-Private-Network: true
+

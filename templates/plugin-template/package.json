@@ -1,0 +1,10 @@
+{
+  "name": "lampa-plugin-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ready-to-run Lampa plugin scaffold",
+  "scripts": {
+    "build": "echo 'No build step'",
+    "lint": "echo 'No linter configured'"
+  }
+}

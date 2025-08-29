@@ -1,0 +1,12 @@
+HTTP/2 200 
+server: nginx/1.22.1
+date: Fri, 29 Aug 2025 00:59:26 GMT
+content-type: application/javascript; charset=utf-8
+vary: Accept-Encoding
+vary: Accept-Encoding
+access-control-allow-credentials: true
+x-cache-status: HIT
+cache-control: no-cache, no-store, must-revalidate
+pragma: no-cache
+expires: 0
+

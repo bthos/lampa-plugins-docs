@@ -1,0 +1,22 @@
+HTTP/2 200 
+server: GitHub.com
+content-type: application/javascript; charset=utf-8
+last-modified: Fri, 29 Dec 2023 15:52:17 GMT
+access-control-allow-origin: *
+etag: "658eeb31-44b4"
+expires: Fri, 29 Aug 2025 01:09:15 GMT
+cache-control: max-age=600
+x-proxy-cache: MISS
+x-github-request-id: F301:3B0757:17CD84:184165:68B0FB5E
+accept-ranges: bytes
+age: 0
+date: Fri, 29 Aug 2025 00:59:15 GMT
+via: 1.1 varnish
+x-served-by: cache-lhr-egll1980076-LHR
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1756429155.296170,VS0,VE105
+vary: Accept-Encoding
+x-fastly-request-id: a3a568eb453762d63b3971809510d8425921dce5
+content-length: 17588
+

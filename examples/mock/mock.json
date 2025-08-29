@@ -1,0 +1,7 @@
+{
+  "message": "Hello from mock server",
+  "items": [
+    { "id": 1, "title": "Item One" },
+    { "id": 2, "title": "Item Two" }
+  ]
+}

@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx/1.26.0
+Date: Fri, 29 Aug 2025 00:59:24 GMT
+Content-Type: application/javascript; charset=utf8
+Content-Length: 527
+Last-Modified: Tue, 03 Dec 2024 09:53:53 GMT
+Connection: keep-alive
+ETag: "674ed531-20f"
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+

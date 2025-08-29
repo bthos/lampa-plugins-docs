@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lampa Plugin Hello World Harness</title>
+  <style>
+    body{background:#0b0f17;color:#e7e9ee;font-family:system-ui,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;margin:0}
+    header{padding:16px 20px;border-bottom:1px solid #1c2230}
+    main{padding:20px}
+    .log{background:#0f1420;border:1px solid #1c2230;border-radius:8px;padding:12px;min-height:140px;white-space:pre-wrap}
+    .row{display:flex;gap:8px;flex-wrap:wrap;margin:.5rem 0}
+    button{background:#1d283a;color:#fff;border:1px solid #2b3a55;border-radius:6px;padding:8px 12px;cursor:pointer}
+    button:hover{background:#22324a}
+  </style>
+</head>
+<body>
+  <header>
+    <strong>🔧 Hello World Harness</strong>
+  </header>
+  <main>
+    <p>This page simulates a tiny subset of Lampa APIs so you can prototype plugin logic in a browser.</p>
+    <div class="row">
+      <button id="btn-ready">Fire app:ready</button>
+      <button id="btn-log">Log message</button>
+      <button id="btn-fetch">Fetch mock JSON</button>
+      <button id="btn-play">Simulate play()</button>
+    </div>
+    <div class="log" id="out"></div>
+  </main>
+
+  <script>
+    // Minimal Lampa shims for quick prototyping
+    const out = document.getElementById('out')
+    function log(...a){ out.textContent += a.join(' ') + "\n" }
+
+    window.Lampa = {
+      Listener: {
+        _subs: {},
+        follow(name, cb){ (this._subs[name] ||= []).push(cb) },
+        emit(name, data){ (this._subs[name]||[]).forEach(cb => { try { cb(data) } catch(e){ console.error(e) } }) }
+      },
+      Noty: { show: (m)=> log('Noty:', m) },
+      Storage: {
+        get: (k, d)=> { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch(_) { return d } },
+        set: (k, v)=> localStorage.setItem(k, JSON.stringify(v)),
+        field: (k)=> null,
+        listener: { follow: ()=>{} }
+      },
+      Settings: { add: ({title})=> log('Settings.add →', title) },
+      Activity: {
+        push: (o)=> log('Activity.push →', JSON.stringify(o)),
+        backward: ()=> log('Activity.backward')
+      },
+      Controller: {
+        add: (id)=> log('Controller.add →', id), toggle: (id)=> log('Controller.toggle →', id),
+        collectionSet: ()=>{}, collectionFocus: ()=>{}
+      },
+      Player: {
+        play: (o)=> log('Player.play →', JSON.stringify(o)),
+        playlist: (list)=> log('Player.playlist →', JSON.stringify(list)),
+        callback: (cb)=> log('Player.callback set')
+      },
+      Reguest: function(){
+        this.timeout = ()=>{}
+        this.silent = (url, ok, err)=> fetch(url).then(r=>r.json()).then(ok).catch(err)
+        this.clear = ()=>{}
+      }
+    }
+
+    // Demo plugin logic: hello world component
+    (function(){
+      const ID = 'hello_world'
+      function init(){
+        Lampa.Settings.add({ title: 'Hello World', group: 'plugins', onSelect: ()=> Lampa.Activity.push({ title:'Hello World', component: ID }) })
+        log('Plugin initialized:', ID)
+      }
+      Lampa.Listener.follow('app', (e)=>{ if (e?.type==='ready') init() })
+      // Direct init to play with even without app event
+      init()
+    })()
+
+    // Harness controls
+    document.getElementById('btn-ready').onclick = ()=> Lampa.Listener.emit('app', { type:'ready' })
+    document.getElementById('btn-log').onclick = ()=> Lampa.Noty.show('Hello from harness')
+    document.getElementById('btn-fetch').onclick = async ()=> {
+      const r = await fetch('./mock/mock.json').then(r=>r.json()).catch(e=>({error: e.message}))
+      log('Fetch mock →', JSON.stringify(r))
+    }
+    document.getElementById('btn-play').onclick = ()=> Lampa.Player.play({ title: 'Sample', url: 'https://cdn.example/video.m3u8' })
+  </script>
+</body>
+</html>

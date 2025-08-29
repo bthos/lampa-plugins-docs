@@ -1,0 +1,161 @@
+lampaplugins.github.io_store_o.js:41:        var authorInfo = review.querySelector('div:last-child');
+lampaplugins.github.io_store_o.js:42:        if (authorInfo) {
+lampaplugins.github.io_store_o.js:43:            authorInfo.style.fontStyle = 'italic';
+lampaplugins.github.io_store_o.js:44:            authorInfo.style.color = '#A9A9A9';
+lampaplugins.github.io_store_o.js:47:            var reviewType = authorInfo.innerHTML.split('<br>')[1];
+lampaplugins.github.io_store_o.js:59:            authorInfo.innerHTML = authorInfo.innerHTML.replace(reviewType, `<span class="${colorClass}">${reviewType}</span>`);
+skaz.tv_tv2.js.headers:14:Access-Control-Allow-Headers: x-requested-with, Content-Type, profile, token, origin, authorization, accept, x-access-token
+skaz.tv_tv.js.headers:13:access-control-allow-headers: x-requested-with, Content-Type, profile, token, origin, authorization, accept, x-access-token
+skaz.tv_tv.js:184:				var menu_itemss = $('<li class="menu__item selector focus" data-action="iptvskaz"><div class="menu__ico">' + icos + '</div><div class="menu__text">ТВ by skaz</div></li>');
+skaz.tv_tv.js:187:						url: 'https://skaz.tv/ch.json?ua='+Lampa.Storage.cache("skazua")+'&email=',						title: 'ТВ by skaz',
+skaz.tv_tv.js:196:        name: 'by skaz'
+skaz.tv_tv.js:210:					name: 'ТВ by Skaz'
+skaz.tv_tv.js:260:			Lampa.Noty.show('Перезайдите в ТВ by Skaz для применения настроек');
+skaz.tv_tv.js:296:          name: 'ТВ by Skaz 2.0',
+skaz.tv_vcdn.js.headers:15:Access-Control-Allow-Headers: x-requested-with, Content-Type, profile, token, origin, authorization, accept, x-access-token
+skaztv.online_js_tricks.js.headers:11:Access-Control-Allow-Headers: x-requested-with, Content-Type, profile, token, origin, authorization, accept, x-access-token
+lampa.mx_app.min.js:279:          } // e. Increase k by 1.
+lampa.mx_app.min.js:331:          } // c. Increase k by 1.
+lampa.mx_app.min.js:782:         * conflicts array will be emptied by end of operation
+lampa.mx_app.min.js:869:              // check attributes as specified by config
+lampa.mx_app.min.js:1116:        return obj[prop] !== undefined$1; // will be nicely inlined by gcc
+lampa.mx_app.min.js:1130:   * @author Brenden Palmer
+lampa.mx_app.min.js:1132:   * @license MIT
+lampa.mx_app.min.js:1937:  // being exposed by browsers for legacy reasons.
+lampa.mx_app.min.js:1958:    author: 'Yumata',
+lampa.mx_app.min.js:2440:  var html$N = "<div class=\"extensions__item selector layer--visible layer--render\">\n    <div class=\"extensions__item-author\"></div>\n    <div class=\"extensions__item-name\"></div>\n    <div class=\"extensions__item-descr\"></div>\n    <div class=\"extensions__item-footer\">\n        <div class=\"extensions__item-error hide\"></div>\n        <div class=\"extensions__item-included hide\"></div>\n        <div class=\"extensions__item-check hide\"></div>\n        <div class=\"extensions__item-proto hide\">\n            <svg width=\"21\" height=\"30\" viewBox=\"0 0 21 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                <circle cx=\"10.5\" cy=\"8.5\" r=\"7\" stroke=\"currentColor\" stroke-width=\"3\"/>\n                <rect y=\"9\" width=\"21\" height=\"21\" rx=\"4\" fill=\"currentColor\"/>\n            </svg>\n        </div>\n        <div class=\"extensions__item-code hide success\"></div>\n        <div class=\"extensions__item-status hide\"></div>\n        <div class=\"extensions__item-disabled hide\">#{player_disabled}</div>\n    </div>\n</div>";
+lampa.mx_app.min.js:2442:  var html$M = "<div class=\"extensions__item extensions__item--recomend selector layer--visible layer--render\">\n    <div class=\"extensions__item-imagebox\">\n        <img class=\"extensions__item-image\" />\n    </div>\n    <div class=\"extensions__item-body\">\n        <div class=\"extensions__item-author\"></div>\n        <div class=\"extensions__item-name\"></div>\n        <div class=\"extensions__item-descr\"></div>\n        <div class=\"extensions__item-footer\">\n            <div class=\"extensions__item-included hide\"></div>\n            <div class=\"extensions__item-check hide\"></div>\n            <div class=\"extensions__item-code hide success\"></div>\n            <div class=\"extensions__item-status hide\"></div>\n            <div class=\"extensions__item-disabled hide\">#{player_disabled}</div>\n        </div>\n    </div>\n</div>";
+lampa.mx_app.min.js:3925:  * @author Mario Klingemann
+lampa.mx_app.min.js:3930:  * @copyright (c) 2010 Mario Klingemann
+lampa.mx_app.min.js:3932:  * Permission is hereby granted, free of charge, to any person
+lampa.mx_app.min.js:3936:  * copy, modify, merge, publish, distribute, sublicense, and/or sell
+lampa.mx_app.min.js:3941:  * The above copyright notice and this permission notice shall be
+lampa.mx_app.min.js:7851:          var author_data = {};
+lampa.mx_app.min.js:7852:          var author_html;
+lampa.mx_app.min.js:7861:          if (element.author) {
+lampa.mx_app.min.js:7862:            author_data = translate$1(element.author);
+lampa.mx_app.min.js:7863:            author_html = $("<div class=\"notice__author\">\n                    <div class=\"notice__author-img\">\n                        <img />\n                    </div>\n                    <div class=\"notice__author-body\">\n                        <div class=\"notice__author-name\"></div>\n                        <div class=\"notice__author-text\"></div>\n                    </div>\n                </div>");
+lampa.mx_app.min.js:7864:            author_html.find('.notice__author-name').html(author_data.name);
+lampa.mx_app.min.js:7865:            author_html.find('.notice__author-text').html(author_data.text);
+lampa.mx_app.min.js:7866:            item.find('.notice__body').append(author_html);
+lampa.mx_app.min.js:7890:              var img_author = item.find('.notice__author img')[0] || {};
+lampa.mx_app.min.js:7900:              img_author.onload = function () {
+lampa.mx_app.min.js:7901:                item.addClass('image-author--loaded');
+lampa.mx_app.min.js:7904:              img_author.onerror = function () {
+lampa.mx_app.min.js:7905:                img_author.src = './img/img_broken.svg';
+lampa.mx_app.min.js:7909:              if (element.author) img_author.src = Utils$2.fixProtocolLink(author_data.img.indexOf('http') >= 0 ? author_data.img : TMDB$1.image('t/p/w200/' + author_data.img));
+lampa.mx_app.min.js:9773:      network$b.silent(api$2() + (plugin.author ? 'extensions' : 'plugins') + '/status', false, false, {
+lampa.mx_app.min.js:10033:      renderStatus(Lang.translate('account_authorized'), Lang.translate('account_logged_in') + ' ' + account.email);
+lampa.mx_app.min.js:15728:    content += "; Script generated by subsrt " + eol;
+lampa.mx_app.min.js:18515:        console.log('Player', 'enable track by default');
+lampa.mx_app.min.js:23576:            var authorization = "Basic " + Base64.encode(Storage.get('torrserver_login') + ':' + Storage.value('torrserver_password'));
+lampa.mx_app.min.js:23577:            xhr.setRequestHeader("Authorization", authorization);
+lampa.mx_app.min.js:25811:        this.html.querySelector('.extensions__item-author').innerText = this.data.author || (this.params.type == 'plugins' ? '@cub' : '@lampa');
+lampa.mx_app.min.js:25835:        var author = this.html.querySelector('.extensions__item-author');
+lampa.mx_app.min.js:25839:        var where = author || this.html;
+lampa.mx_app.min.js:25896:    if (plug.author) addLabel(Lang.translate('title_author'), plug.author);
+lampa.mx_app.min.js:26054:                  author: _this2.data.author
+lampa.mx_app.min.js:30068:      dv: [Lang.translate('torrent_parser_no_choice'), 'Dolby Vision', 'Dolby Vision TV', Lang.translate('torrent_parser_no')],
+lampa.mx_app.min.js:30078:      dv: 'Dolby Vision',
+lampa.mx_app.min.js:30578:      add('dv', 'Dolby Vision');
+lampa.mx_app.min.js:30799:            check('dolby vision');
+lampa.mx_app.min.js:30801:            check('dolby vision tv');
+lampa.mx_app.min.js:30803:            check('dolby vision', dv !== 0);
+lampa.mx_app.min.js:36812:    title_author: 'Автор',
+lampa.mx_app.min.js:37299:    account_authorized: 'Авторизованы',
+lampa.mx_app.min.js:37446:    premiere_author_recomend_1: 'Закажите пиццу и готовьтесь к драйву.',
+lampa.mx_app.min.js:37447:    premiere_author_recomend_2: 'Вечеринка только начинается.',
+lampa.mx_app.min.js:37448:    premiere_author_recomend_3: 'Подготовьтесь к адреналину.',
+lampa.mx_app.min.js:37449:    premiere_author_recomend_4: 'Готовы к незабываемому вечеру?',
+lampa.mx_app.min.js:37450:    premiere_author_recomend_5: 'Рекомендую к просмотру.',
+lampa.mx_app.min.js:37727:    torrent_error_info_4: 'Frequent occurrence, antivirus or firewall can block access by IP address, try disabling antivirus and firewall.',
+lampa.mx_app.min.js:37764:    torrent_parser_sort_by_name: 'by name',
+lampa.mx_app.min.js:38251:    player_size_s115_descr: 'Enlarge video by 115%',
+lampa.mx_app.min.js:38253:    player_size_s130_descr: 'Enlarge video by 130%',
+lampa.mx_app.min.js:38255:    player_size_v115_descr: 'Enlarge video by 115%',
+lampa.mx_app.min.js:38257:    player_size_v130_descr: 'Enlarge video by 130%',
+lampa.mx_app.min.js:38308:    account_authorized: 'Authorized',
+lampa.mx_app.min.js:38449:    title_author: 'Author',
+lampa.mx_app.min.js:38459:    torrent_error_check_no_auth: 'The server responded to the request, but the authorization failed',
+lampa.mx_app.min.js:38492:    termsofuse_t_07: 'Thus, thanks to the use of the themoviedb.org API, the Lampa application provides users with access to an extensive database of movies and TV shows, while complying with the terms of use and restrictions set by the rights holder.',
+lampa.mx_app.min.js:38497:    termsofuse_t_12: 'If you discover any copyright infringement in the Lampa application, you should contact the developers of the Lampa application. You can use the contacts provided in the Lampa application to do so. However, it is important to note that the Lampa application uses the API from the themoviedb.org catalog, which provides open access to information about movies and TV shows. This means that the information displayed in the Lampa application is publicly available and does not infringe on copyright.',
+lampa.mx_app.min.js:38498:    termsofuse_t_13: 'If you believe that the Lampa application still contains content that violates your copyright, you can contact the rights holder of that content and request its removal from the themoviedb.org website. In turn, the Lampa application can remove content upon receiving a proper copyright infringement notification.',
+lampa.mx_app.min.js:38514:    premiere_author_recomend_1: 'Order pizza and get ready for some excitement.',
+lampa.mx_app.min.js:38515:    premiere_author_recomend_2: 'The party is just getting started.',
+lampa.mx_app.min.js:38516:    premiere_author_recomend_3: 'Get ready for some adrenaline.',
+lampa.mx_app.min.js:38517:    premiere_author_recomend_4: 'Ready for an unforgettable evening?',
+lampa.mx_app.min.js:38518:    premiere_author_recomend_5: 'I recommend watching it.',
+lampa.mx_app.min.js:38571:    pincode_use_remote: 'Use the remote control to enter the code by pressing the arrows to select the desired number.',
+lampa.mx_app.min.js:38589:    dmca_descr: 'This material is not available for viewing. It has been blocked at the request of the copyright holder in accordance with copyright law.',
+lampa.mx_app.min.js:38597:    install_extension_rule_2: 'Plugins are created by independent developers, and LAMPA does not verify their content. By installing them, you agree that:',
+lampa.mx_app.min.js:38599:    install_extension_rule_4: '- If the plugin you install violates copyright or other laws, you are fully responsible for its use.',
+lampa.mx_app.min.js:38610:    terminal_text: 'You are requesting access to the terminal. Developers may gain access to your device and control it. This can be useful for diagnostics and troubleshooting, but may also pose a security risk. Please make sure you trust the developers before granting access. <br><br>You can disable this feature at any time by clicking the "Deny" button.'
+lampa.mx_app.min.js:41022:            notice.author = {};
+lampa.mx_app.min.js:41024:              notice.author[c] = {
+lampa.mx_app.min.js:41027:                text: Lang.translate('premiere_author_recomend_' + (Math.floor(Math.random() * 5) + 1))
+and7ey.github.io_lampa_stats.js:174:        // filter records by the given year
+nb557.surge.sh_online_mod.js:1560:          error_message = Lampa.Lang.translate('online_mod_authorization_required') + ' HDrezka';
+nb557.surge.sh_online_mod.js:5063:      var authorization_required = !cookie;
+nb557.surge.sh_online_mod.js:5195:          } else if (authorization_required) component.empty(Lampa.Lang.translate('online_mod_authorization_required') + ' FanSerials');else component.emptyForQuery(select_title);
+nb557.surge.sh_online_mod.js:5244:          } else if (authorization_required) component.empty(Lampa.Lang.translate('online_mod_authorization_required') + ' FanSerials');else component.emptyForQuery(select_title);
+nb557.surge.sh_online_mod.js:5734:            if (error) error(Lampa.Lang.translate('online_mod_authorization_required') + ' FanSerials');
+nb557.surge.sh_online_mod.js:9082:          Lampa.Noty.show(Lampa.Lang.translate('online_mod_blockedlink_copyright'));
+nb557.surge.sh_online_mod.js:9468:          if (json && json.is_blocked_by_copyrights) Lampa.Noty.show(Lampa.Lang.translate('online_mod_blockedlink_copyright'));else if (json && json.is_blocked_by_geo) Lampa.Noty.show(Lampa.Lang.translate('online_mod_blockedlink'));
+nb557.surge.sh_online_mod.js:11298:          voice_name = [audio.type && audio.type.title, audio.author && audio.author.title].filter(function (name) {
+nb557.surge.sh_online_mod.js:11303:          voice_name = type === 'Оригинал' ? type : audio.author && audio.author.title || type;
+nb557.surge.sh_online_mod.js:11315:          var author = !full && type === 'Оригинал' ? '' : voice_info.author && voice_info.author.title;
+nb557.surge.sh_online_mod.js:11318:          if (author) {
+nb557.surge.sh_online_mod.js:11320:              return audio.author && audio.author.title === author;
+nb557.surge.sh_online_mod.js:11340:          if (!author) {
+nb557.surge.sh_online_mod.js:11342:              return !full && audio.type && audio.type.title === 'Оригинал' || !(audio.author && audio.author.title);
+nb557.surge.sh_online_mod.js:13277:      online_mod_blockedlink_copyright: {
+nb557.surge.sh_online_mod.js:13281:        en: 'Sorry, this video is not available due to copyright holder request',
+nb557.surge.sh_online_mod.js:13592:      online_mod_authorization_required: {
+nb557.surge.sh_online_mod.js:13673:        en: 'Enter it at ' + filmixHost + '/consoles in your authorized account!',
+nb557.surge.sh_online_mod.js:13701:        en: 'Device not authorized',
+cdn.kulik.uz_cors:3203:    var F = ["unexpected EOF", "invalid block type", "invalid length/literal", "invalid distance", "stream finished", "no stream handler", "invalid header", "no callback", "invalid UTF-8 data", "extra field too long", "date not in range 1980-2099", "filename too long", "stream finishing", "invalid zip data", "determined by unknown compression method"],
+cdn.kulik.uz_cors:4257:        en: 'Unfortunately, for the plugin to work, you need to update your lamp by rebooting it. It is outdated and without this procedure the plugin will not function.',
+cdn.kulik.uz_cors:4293:        en: 'Sort by favorite',
+cub.red_plugin_iptv:3260:    var F = ["unexpected EOF", "invalid block type", "invalid length/literal", "invalid distance", "stream finished", "no stream handler", "invalid header", "no callback", "invalid UTF-8 data", "extra field too long", "date not in range 1980-2099", "filename too long", "stream finishing", "invalid zip data", "determined by unknown compression method"],
+cub.red_plugin_iptv:4334:        en: 'Unfortunately, for the plugin to work, you need to update your lamp by rebooting it. It is outdated and without this procedure the plugin will not function.',
+cub.red_plugin_iptv:4370:        en: 'Sort by favorite',
+skaz.tv_tv2.js:2181:    var F = ["unexpected EOF", "invalid block type", "invalid length/literal", "invalid distance", "stream finished", "no stream handler", "invalid header", "no callback", "invalid UTF-8 data", "extra field too long", "date not in range 1980-2099", "filename too long", "stream finishing", "invalid zip data", "determined by unknown compression method"],
+skaz.tv_tv2.js:2867:      name: 'by Skaz'
+skaz.tv_tv2.js:2879:					name: 'ТВ by Skaz 2.0'
+skaz.tv_tv2.js:2906:					name: 'ТВ by Skaz'
+skaz.tv_tv2.js:2940:			Lampa.Noty.show('Перезайдите в ТВ by Skaz для применения настроек');
+skaz.tv_tv2.js:3388:        en: 'Unfortunately, for the plugin to work, you need to update your lamp by rebooting it. It is outdated and without this procedure the plugin will not function.',
+skaz.tv_tv2.js:3424:        en: 'Sort by favorite',
+skaz.tv_tv2.js:3767:      name: 'TV by skaz 2.0',
+skaz.tv_tv2.js:3779:          title: 'Вы смотрели в ТВ by skaz',
+skaz.tv_tv2.js:3791:      var button = $("<li class=\"menu__item selector\">\n            <div class=\"menu__ico\">\n                <svg height=\"36\" viewBox=\"0 0 38 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <rect x=\"2\" y=\"8\" width=\"34\" height=\"21\" rx=\"3\" stroke=\"currentColor\" stroke-width=\"3\"/>\n                    <line x1=\"13.0925\" y1=\"2.34874\" x2=\"16.3487\" y2=\"6.90754\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n                    <line x1=\"1.5\" y1=\"-1.5\" x2=\"9.31665\" y2=\"-1.5\" transform=\"matrix(-0.757816 0.652468 0.652468 0.757816 26.197 2)\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n                    <line x1=\"9.5\" y1=\"34.5\" x2=\"29.5\" y2=\"34.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n                </svg>\n            </div>\n            <div class=\"menu__text\">TV by skaz 2.0</div>\n        </li>");
+skaz.tv_tv2.js:3799:          title: 'TV by skaz 2.0',
+plugin.rootu.top_wsoff.js:5:			console.log('Socket', 'initialization disabled by wsoff.js plugin')
+plugin.rootu.top_wsoff.js:8:			console.log('Socket', 'Method "' + method + '" send disabled by wsoff.js plugin')
+skaz.tv_o.js.headers:14:access-control-allow-headers: x-requested-with, Content-Type, profile, token, origin, authorization, accept, x-access-token
+nb557.github.io_plugins_online_mod.js:1560:          error_message = Lampa.Lang.translate('online_mod_authorization_required') + ' HDrezka';
+nb557.github.io_plugins_online_mod.js:5063:      var authorization_required = !cookie;
+nb557.github.io_plugins_online_mod.js:5195:          } else if (authorization_required) component.empty(Lampa.Lang.translate('online_mod_authorization_required') + ' FanSerials');else component.emptyForQuery(select_title);
+nb557.github.io_plugins_online_mod.js:5244:          } else if (authorization_required) component.empty(Lampa.Lang.translate('online_mod_authorization_required') + ' FanSerials');else component.emptyForQuery(select_title);
+nb557.github.io_plugins_online_mod.js:5734:            if (error) error(Lampa.Lang.translate('online_mod_authorization_required') + ' FanSerials');
+nb557.github.io_plugins_online_mod.js:9082:          Lampa.Noty.show(Lampa.Lang.translate('online_mod_blockedlink_copyright'));
+nb557.github.io_plugins_online_mod.js:9468:          if (json && json.is_blocked_by_copyrights) Lampa.Noty.show(Lampa.Lang.translate('online_mod_blockedlink_copyright'));else if (json && json.is_blocked_by_geo) Lampa.Noty.show(Lampa.Lang.translate('online_mod_blockedlink'));
+nb557.github.io_plugins_online_mod.js:11298:          voice_name = [audio.type && audio.type.title, audio.author && audio.author.title].filter(function (name) {
+nb557.github.io_plugins_online_mod.js:11303:          voice_name = type === 'Оригинал' ? type : audio.author && audio.author.title || type;
+nb557.github.io_plugins_online_mod.js:11315:          var author = !full && type === 'Оригинал' ? '' : voice_info.author && voice_info.author.title;
+nb557.github.io_plugins_online_mod.js:11318:          if (author) {
+nb557.github.io_plugins_online_mod.js:11320:              return audio.author && audio.author.title === author;
+nb557.github.io_plugins_online_mod.js:11340:          if (!author) {
+nb557.github.io_plugins_online_mod.js:11342:              return !full && audio.type && audio.type.title === 'Оригинал' || !(audio.author && audio.author.title);
+nb557.github.io_plugins_online_mod.js:13277:      online_mod_blockedlink_copyright: {
+nb557.github.io_plugins_online_mod.js:13281:        en: 'Sorry, this video is not available due to copyright holder request',
+nb557.github.io_plugins_online_mod.js:13592:      online_mod_authorization_required: {
+nb557.github.io_plugins_online_mod.js:13673:        en: 'Enter it at ' + filmixHost + '/consoles in your authorized account!',
+nb557.github.io_plugins_online_mod.js:13701:        en: 'Device not authorized',
+and7ey.github.io_lampa_kinopoisk.js:67:                                    console.log('Kinopoisk', 'No IMDB movie id found for kinopoisk id: ' + String(m.movie.id) + ', will search by movie title: ' + movieTitle);
+and7ey.github.io_lampa_kinopoisk.js:70:                                    console.log('Kinopoisk', 'No IMDB movie id found for kinopoisk id: ' + String(m.movie.id) + ', will search by tv series title: ' + movieTitle);
+and7ey.github.io_lampa_kinopoisk.js:113:                                    console.log('Kinopoisk', 'No movie found by IMDB id: ' + String(movieIMDBid));
+and7ey.github.io_lampa_kinopoisk.js:244:                // ask user to authorize
+and7ey.github.io_lampa_kinopoisk.js:308:                if(Lampa.Storage.get('kinopoisk_access_token', '') == '') { // initial authorization needed
+and7ey.github.io_lampa_kinopoisk.js:355:                if (Lampa.Storage.get('kinopoisk_email', false)) { // user authorized
+and7ey.github.io_lampa_kinopoisk.js:380:                } else { // user not authorized

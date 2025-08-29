@@ -1,0 +1,14 @@
+HTTP/2 200 
+server: nginx
+date: Fri, 29 Aug 2025 00:59:25 GMT
+content-type: application/javascript; charset=utf-8
+content-length: 203361
+vary: Accept-Encoding
+x-powered-by: Express
+etag: W/"31a61-TCHJGwWQfZ6yKcodf0IRRYvOv5U"
+access-control-allow-origin: *
+access-control-allow-headers: origin, x-requested-with, content-type, accept, token, profile
+access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, HEAD
+last-modified: Friday, 29-Aug-2025 00:59:25 GMT
+cache-control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+

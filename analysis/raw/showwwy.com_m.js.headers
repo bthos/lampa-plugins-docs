@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 29 Aug 2025 00:59:27 GMT
+Content-Type: application/javascript
+Content-Length: 99881
+Connection: keep-alive
+Accept-Ranges: bytes
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Accept, Origin, Content-Type, Authorization, X-Requested-With, X-Signalr-User-Agent, Cache-Control, DNT, If-Modified-Since, Keep-Alive, User-Agent, Token, Profile
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Origin: *
+ETag: "1dbc027f4bedf29"
+Last-Modified: Thu, 08 May 2025 14:46:18 GMT
+Access-Control-Allow-Private-Network: true
+
